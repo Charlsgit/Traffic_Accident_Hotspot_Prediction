@@ -99,4 +99,3 @@ The model predicts accident severity levels:
 - Deploy as a **Smart City Road Safety Dashboard** using Streamlit  
 - Provide automated **prevention recommendations
 
-- 
