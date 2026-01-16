@@ -24,7 +24,7 @@ The goal is to:
 
 ---
 
-## **Steps Performed ** 
+## **Steps Performed** 
 
 ### **Data Cleaning & Preprocessing**  
 - Removed/handled missing values (`na`, nulls)  
