@@ -5,9 +5,11 @@ A real-world, data-driven Smart City solution to support safer roads and better 
 ---
 
 ## **Project Overview**
+
 This project applies **Machine Learning and Data Science techniques** on a Road Traffic Accident (RTA) dataset to identify **high-risk accident patterns (hotspots)** and predict **accident severity**.
 
 The goal is to:  
+
 - Understand accident trends based on **time, road, driver, and environment conditions**  
 - Detect **high-risk hotspot-like conditions** that contribute to severe accidents  
 - Build a model to **predict accident severity** for better safety planning  
@@ -15,6 +17,7 @@ The goal is to:
 ---
 
 ## **Tech Stack** 
+
 - **Python**
 - **Pandas**
 - **NumPy**
@@ -26,7 +29,8 @@ The goal is to:
 
 ## **Steps Performed** 
 
-### **Data Cleaning & Preprocessing**  
+### **Data Cleaning & Preprocessing** 
+
 - Removed/handled missing values (`na`, nulls)  
 - Converted the **Time** column into a usable format  
 - Created a new feature: **Hour** (extracted from Time)  
@@ -35,8 +39,10 @@ The goal is to:
 ---
 
 ### **Exploratory Data Analysis** (EDA)  
+
 - Accident severity distribution analysis  
-- Severity comparison across:  
+- Severity comparison across:
+-  
   - **Day of week**  
   - **Hour of day (peak accident times)**  
   - **Road surface type**  
@@ -46,10 +52,12 @@ The goal is to:
 ---
 
 ### **Hotspot / Risk Pattern Identification**  
+
 Since the dataset does not contain GPS coordinates, hotspots are analyzed as:  
  **High-risk conditions** rather than location-based map hotspots  
 
 Examples:  
+
 - High-risk accident hours  
 - Road surface types leading to severe injuries  
 - Driving conditions that increase fatal/serious accident probability  
@@ -57,17 +65,22 @@ Examples:
 ---
 
 ### **Feature Encoding & Model Preparation**  
-Used:  
+
+Used:
+
 - **OneHotEncoder** for categorical features  
 - Train-test split with stratification for balanced evaluation  
 
 ---
 
 ### **Machine Learning Model Training**  
+
 Trained a classification model using:  
+
 - **Random Forest Classifier**  
 
 The model predicts accident severity levels:  
+
 - Slight Injury  
 - Serious Injury  
 - Fatal Injury  
@@ -75,8 +88,10 @@ The model predicts accident severity levels:
 ---
 
 ## **Results**  
+
 - Built a working ML pipeline to predict accident severity  
-- Discovered high-risk patterns such as:  
+- Discovered high-risk patterns such as:
+-  
   • Peak risk hours during the day  
   • Road surface conditions linked to higher severity  
   • Top accident causes contributing to severe outcomes  
@@ -84,6 +99,7 @@ The model predicts accident severity levels:
 ---
 
 ## **What I Learned**  
+
 - How to build an end-to-end ML pipeline on real-world accident data  
 - Handling categorical-heavy datasets using OneHotEncoding  
 - Importance of EDA to uncover meaningful safety insights  
@@ -93,6 +109,7 @@ The model predicts accident severity levels:
 ---
 
 ## **Future Improvements**  
+
 - Add **latitude/longitude** to perform true map-based hotspot detection  
 - Integrate **weather + traffic APIs** for real-time risk forecasting  
 - Improve minority class prediction using **SMOTE / XGBoost / LightGBM**  
